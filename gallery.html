@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLE GOLF</title>
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f3efef;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Navbar */
+         .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+         /* Hero Section */
+         .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://fthmb.tqn.com/Dedb5me01-zZ4xrHoxTDQKSXEys=/5200x3481/filters:fill(auto,1)/golf-swing-driver-586568b25f9b586e0208884a.jpg') no-repeat center center/cover;
+            color: #070404;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons .cta-btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        /* Quick Links Section */
+        .quick-links {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .quick-links h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .link-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .link-card {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .link-card:hover {
+            background-color: #555;
+        }
+
+        /* Events Section */
+        .events-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .events-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .event-card {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .event-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .event-btn {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* About Us Section */
+        .about-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Packages and Facilities Section */
+         .packages-facilities-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .packages-facilities-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .package,
+        .facility {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #fff;
+        }
+
+        .package h3,
+        .facility h3 {
+            color: #007BFF;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Contact Section */
+         .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .contact-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Booking Section */
+         .booking-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .booking-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .booking-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Hole Golf Club</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#booking.html">Booking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    
+    <section class="container">
+        <div class="gallery-item">
+            <img src="https://www.dronestagr.am/wp-content/uploads/2017/06/DJI_0239-3-scaled.jpg" alt="Beautiful view of Hole 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.travelandleisure.com/thmb/t6YClx98SzUa-VW2vAsUG2Cfn88=/1800x1200/filters:fill(auto,1)/biltmore-golf-course-miami_HERO_FLGOLF0822-5cccab45e1f8407ab8209d8ddd35f9a8.jpg" alt="Clubhouse exterior">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.sportstravelmagazine.com/wp-content/uploads/2021/06/AP21143845719403-scaled.jpg" alt="Golf tournament in progress">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.columbuszoo.org/sites/default/files/assets/banners/GOLF.jpg" alt="Golf course at sunset">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Hole Golf Club</h2>
+        <p>Hole Golf Club is a premier destination for golf enthusiasts, offering stunning views, challenging holes, and an unmatched experience for all skill levels. Join us to experience golf at its finest.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Hole Golf Club. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
